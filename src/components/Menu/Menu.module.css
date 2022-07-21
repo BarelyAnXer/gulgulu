@@ -1,0 +1,116 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.search {
+    max-width: 700px;
+    display: flex;
+    color: #202124;
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+    border: 1px solid #eee;
+    border-radius: 30px;
+    position: relative;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.14) 1px 1px 6px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.searchInput {
+    height: 40px;
+    box-sizing: inherit;
+    display: block;
+    width: 98%;
+    margin: auto;
+    background: #fff;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 14px;
+    text-align: left;
+    text-overflow: ellipsis;
+    line-height: 36px;
+}
+
+.searchIcon {
+    margin-left: 20px;
+    font-size: 1.6rem;
+    color: #aaa;
+    width: 1em;
+}
+
+.timesIcon {
+    margin-right: 20px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: #70757a;
+}
+
+.filterMenu {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid gray;
+}
+
+.containerMenuItemsContainer {
+    margin: 10px auto 0 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.filterMenuItemContainer {
+    display: flex;
+    justify-content: space-around;
+    gap: 0px;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+}
+
+.filterMenuItemIcon {
+    display: none;
+    font-size: 1.1rem;
+}
+
+.filterMenuItemLink {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    color: #5f6368;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 2px;
+    margin: 0 3px;
+}
+
+.test {
+    color: red;
+    font-size: 23rem;
+    background-color: red;
+}
+
+@media (min-width: 700px) {
+    .filterMenuItemIcon {
+        display: inline;
+    }
+
+    .container {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2.3rem;
+    }
+
+    .containerMenuItemsContainer {
+        gap: 10px;
+        margin-left: 170px;
+    }
+
+}
+
