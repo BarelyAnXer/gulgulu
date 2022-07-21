@@ -1,0 +1,40 @@
+.blogs {
+
+}
+
+.blogCard {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    margin-bottom: 20px;
+    display: flex;
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #eee;
+    padding: 0 20px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.blogIcon {
+
+}
+
+.blogLanguage {
+
+}
+
+.blogTitle {
+
+}
+
+.blogExcerpt {
+
+}
+
+.blogDate {
+
+}
+
+
+.image {
+
+}

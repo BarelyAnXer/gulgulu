@@ -1,0 +1,295 @@
+.container {
+    margin-left: auto;
+    position: relative;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.5em;
+    padding: .5em 1em;
+}
+
+.link {
+    font: 13px/27px Roboto, RobotoDraft, Arial, sans-serif;
+    color: black;
+    text-decoration: none;
+}
+
+.bentoMenuContainer {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.bentoMenuContainer:hover {
+    border-radius: 50px;
+    background-color: darkgray;
+}
+
+.bentoMenu {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.dropdown {
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    right: 1.2rem;
+    border-radius: 10px;
+    visibility: visible;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 13px;
+    color: rgba(0, 0, 0, .87);
+    background-color: #fff;
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, .15);
+    border: 1px solid #eee;
+    padding: 15px;
+}
+
+.dropdownItems {
+    font-size: 13px;
+    color: rgba(0, 0, 0, .87);
+    display: grid;
+    justify-content: space-between;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.dropdownItem {
+    font-size: 13px;
+    width: 84px;
+    height: 84px;
+    border-radius: 8px;
+    color: #555;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.dropdownItems ~ .dropdownItem:hover {
+    background-color: #edf7fc;
+    border-radius: 10px;
+}
+
+.logoContainer {
+    cursor: pointer;
+}
+
+.logoContainer:hover > .profileTooltip {
+    visibility: visible;
+    display: block;
+}
+
+.logo {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+}
+
+.dropdownOpen {
+    visibility: hidden;
+}
+
+.profileTooltip {
+    position: absolute;
+    background: rgba(60, 64, 67, .90);
+    border-radius: 4px;
+    color: #fff;
+    font: 500 12px "Roboto", arial, sans-serif;
+    line-height: 16px;
+    margin-top: 4px;
+    min-height: 14px;
+    padding: 4px 8px;
+    z-index: 999;
+    visibility: hidden;
+    display: none;
+    right: 1.2rem;
+}
+
+.profileTooltip p:first-child {
+    margin: 0;
+    font: 500 12px "Roboto", arial, sans-serif;
+    letter-spacing: 1px;
+    text-align: left;
+    line-height: 16px;
+    color: white;
+}
+
+.profileTooltip p {
+    margin: 0;
+    font: 500 12px "Roboto", arial, sans-serif;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #bdc1c6;
+    line-height: 16px;
+}
+
+.profileDropdown {
+    width: 350px;
+    color: rgba(0, 0, 0, .87);
+    background-color: #fff;
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, .15);
+    border: 1px solid #eee;
+    position: absolute;
+    right: 1.2rem;
+    border-radius: 10px;
+    visibility: visible;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 13px;
+    z-index: 1000;
+}
+
+
+.dropdownName {
+    white-space: nowrap;
+    color: #202124;
+    font: 500 16px/24px "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+    letter-spacing: .1px;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    margin: 10px 0 0;
+}
+
+
+.dropdownProfile {
+    color: rgba(0, 0, 0, .87);
+    border: none;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    display: block;
+    margin: 20px auto;
+}
+
+.dropdownEmail {
+    font: 500 14px/20px "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    color: #5f6368;
+    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: .2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+}
+
+.contentLink {
+    text-decoration: none;
+    font: 500 14px/20px "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    color: #3c4043;
+    border: 1px solid #dadce0;
+    text-overflow: ellipsis;
+    white-space: normal;
+    border-radius: 100px;
+    box-sizing: border-box;;
+    max-width: 254px;
+    outline: 0;
+    padding: 6px 16px;
+    display: block;
+    margin: 20px auto;
+}
+
+.contentLink:hover {
+    background: #f8f8f8;
+}
+
+.sectionTwoContainer {
+    text-size-adjust: 100%;
+    border-top: 1px solid #dadce0;
+    display: flex;
+    color: #3c4043;
+    text-decoration: none;
+    padding: 3px 3px 3px 30px;
+    align-items: center;
+    gap: 10px;
+}
+
+.sectionTwoContainer:hover {
+    background: #f8f8f8;
+}
+
+.sectionTwoLink {
+    color: #3c4043;
+    font: 500 14px/20px "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+}
+
+.sectionTwoIcon {
+    font-size: 20px;
+}
+
+
+.sectionThreeContainer {
+    color: rgba(0, 0, 0, .87);
+    border-bottom: 1px solid #dadce0;
+    border-top: 1px solid #dadce0;
+    padding: 16px 0;
+    text-align: center;
+}
+
+.sectionThreeButtonLink {
+    text-decoration: none;
+
+    text-align: center;
+    vertical-align: middle;
+    color: #3c4043;
+    border: 1px solid #dadce0;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: normal;
+    border-radius: 4px;
+    max-width: 246px;
+    outline: 0;
+    padding: 8px 24px;
+
+
+}
+
+.sectionThreeButtonLink:hover {
+    background: #f8f8f8;
+}
+
+.sectionFourContainer {
+    color: rgba(0, 0, 0, .87);
+    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+    height: 51px;
+    padding-bottom: 17px;
+    padding-top: 17px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionFourLink {
+    text-decoration: none;
+    font: 400 12px/16px Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+    letter-spacing: .3px;
+    color: #3c4043;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    padding: 4px 7px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.sectionFourLink:hover {
+    background-color: #f8f8f8;
+}

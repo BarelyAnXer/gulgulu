@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import {
+    BrowserRouter,
+    Routes,
+    Route,
+} from 'react-router-dom'
+import Home from './pages/Home'
+import All from './pages/All'
+import Projects from "./pages/projects";
+import Images from "./pages/Images";
+import Blog from "./pages/Blog";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    // TODO auto suggestion sa lilitaw pag na seserach?
+    // how to implement that and
+    // should i implement it in this site
+
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/all" element={<All/>}/>
+                <Route path="/projects" element={<Projects/>}/>
+                <Route path="/images" element={<Images/>}/>
+                <Route path="/news" element={<Blog/>}/>
+            </Routes>
+        </BrowserRouter>
+    )
 }
 
-export default App;
+export default App

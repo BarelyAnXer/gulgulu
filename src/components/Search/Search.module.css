@@ -1,0 +1,142 @@
+.search {
+    height: 50px;
+    width: 87%;
+    margin: 0 auto;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    background: #fff;
+    max-width: 584px;
+}
+
+
+.search:hover {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+    border-color: rgba(223, 225, 229, 0);
+}
+
+.searchInputContainer {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    height: 50px;
+    border-radius: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.searchOptionContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    box-sizing: inherit;
+    height: 36px;
+    width: 100%;
+    padding: 0 16px;
+    background: #fff;
+    border: none;
+    outline: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    text-align: left;
+    cursor: default;
+    color: #784ca4;
+}
+
+.searchOptionContainer:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+.searchOptionName {
+    font-family: arial, sans-serif;
+    cursor: default;
+    font-size: 16px;
+    word-break: break-word;
+    color: #52188c;
+    flex: auto;
+}
+
+.searchOptionContainer .remove {
+    margin-left: auto;
+    color: #80868b;
+    font: 13px arial, sans-serif;
+    cursor: pointer;
+}
+
+.searchOptionContainer .remove:hover {
+    color: #1a73e8;
+    text-decoration: underline;
+}
+
+.searchButtonsContainer {
+    display: flex;
+    height: 60px;
+    margin-top: 15px;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.searchButton {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0px 20px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchButton:hover {
+    border: 1px solid #eee;
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 20%);
+}
+
+.searchIcon {
+    font-size: 24px;
+    color: #a7acb1;
+}
+
+
+.searchInput {
+    font-size: 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 20px;
+}
+
+.searchInput:active {
+    border: none;
+    outline: none;
+}
+
+.searchInput:focus .searchIcon {
+    background-color: red;
+    font-size: 100px;
+    color: red;
+}
+
+
+.removeIcon {
+    /*TODO nipisan to*/
+    color: #70757a;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.clearIcon {
+    color: #70757a;
+    font-size: 20px;
+    /*display: none;*/
+}
