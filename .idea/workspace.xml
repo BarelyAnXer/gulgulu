@@ -2,25 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05033ea9-c435-4edc-b025-73ec86778484" name="Changes" comment="inital commit?">
-      <change afterPath="$PROJECT_DIR$/src/images/news/techCruch.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/4.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Images.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Projects.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menu/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu/Menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menu/Menu.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu/Menu.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TextLogo/TextLogo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TextLogo/TextLogo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TextLogo/TextLogo.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TextLogo/TextLogo.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/projects.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/All.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/All.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Blog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Blog.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Blog.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Images.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Images.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Projects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +68,8 @@
       <workItem from="1658466441604" duration="652000" />
       <workItem from="1658501178225" duration="10000" />
       <workItem from="1658625124685" duration="2611000" />
-      <workItem from="1658632263103" duration="5071000" />
+      <workItem from="1658632263103" duration="5852000" />
+      <workItem from="1658664556182" duration="1712000" />
     </task>
     <task id="LOCAL-00001" summary="a lot of changes">
       <created>1658405535740</created>

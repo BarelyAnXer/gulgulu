@@ -3,7 +3,7 @@ import styles from './Footer.module.css'
 const Footer = () => {
     return (
         <div style={{
-            marginTop: 'auto',
+            marginTop: "auto",
         }}>
             <div className={`${styles.container} ${styles.underline} `}>
                 <p className={styles.location}>Philippines</p>
@@ -23,7 +23,7 @@ const Footer = () => {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default Footer
