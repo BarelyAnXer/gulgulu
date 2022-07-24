@@ -11,7 +11,7 @@ function All() {
 
     const initAccordionState = () => {
         const obj = {};
-        accordionQnA.forEach((item, index) => {
+        accordionQnA.forEach((item) => {
             obj[item.question] = false;
         });
 

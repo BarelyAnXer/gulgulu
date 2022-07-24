@@ -1,40 +1,120 @@
 .blogs {
-
+    margin-bottom: 20px;
+    min-height: 80vh;
+    margin-left: 0;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 600px;
 }
 
 .blogCard {
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     margin-bottom: 20px;
     display: flex;
     color: #333;
     text-decoration: none;
     border: 1px solid #eee;
-    padding: 0 20px;
+    padding: 5px 20px;
     border-radius: 10px;
+    align-items: center;
+    justify-content: space-around;
+    background: #fff;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, .2);
+    gap: 10px
+}
+
+.blogTextContainer {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    color: #333;
+}
+
+.blogCategory {
+    display: flex;
     align-items: center;
 }
 
 .blogIcon {
-
+    width: 20px;
 }
 
-.blogLanguage {
-
+.blogSource {
+    margin-left: 10px;
+    color: #70757a;
+    font-family: arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.3333333333333333em;
 }
 
 .blogTitle {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    color: #333;
+    margin: 0;
+    font-weight: 400;
+    max-width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
 
+.blogTitle:hover {
+    color: blue;
 }
 
 .blogExcerpt {
-
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    margin: 5px 0;
+    font-weight: 400;
+    color: #70757a;
+    font-size: 14px;
+    line-height: 1.45em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    display: none;
 }
 
 .blogDate {
-
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    margin-top: 5px;
+    font-size: 12px;
+    line-height: 1.3em;
+    color: #70757a;
 }
 
+.blogImageContainer {
+    width: 100px;
+    height: 100px;
+    align-self: center;
+    margin-top: 0;
+}
 
 .image {
+    border-radius: 20px;
+    object-fit: cover;
+    height: 100%;
+}
 
+@media (min-width: 700px) {
+    .blogs {
+        margin-left: 170px;
+    }
+
+    .blogExcerpt {
+        display: block;
+    }
+
+    .blogImageContainer {
+        width: 30%;
+        height: 150px;
+    }
+
+    .blogTextContainer {
+        width: 60%;
+    }
 }

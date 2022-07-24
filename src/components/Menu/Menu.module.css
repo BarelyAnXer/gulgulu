@@ -59,11 +59,10 @@
 }
 
 .containerMenuItemsContainer {
-    margin: 10px auto 0 10px;
+    margin: 10px auto 0 17px;
     display: flex;
     flex-direction: row;
 }
-
 
 .filterMenuItemContainer {
     display: flex;
@@ -72,11 +71,21 @@
     align-items: center;
     color: black;
     text-decoration: none;
+
+}
+
+.filterMenuItemContainerActive {
+    border-bottom: 3px solid #00f;
 }
 
 .filterMenuItemIcon {
     display: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    color: #5f6368;
+}
+
+.filterMenuItemIconActive {
+    color: #00f;
 }
 
 .filterMenuItemLink {
@@ -89,10 +98,8 @@
     margin: 0 3px;
 }
 
-.test {
-    color: red;
-    font-size: 23rem;
-    background-color: red;
+.filterMenuItemLinkActive {
+    color: #00f;
 }
 
 @media (min-width: 700px) {

@@ -1,0 +1,65 @@
+.imagesContents {
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.imagesCard {
+    width: 350px;
+    height: 280px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.image {
+    height: 200px;
+    overflow: hidden;
+    width: 95%;
+    background: #eee;
+    margin: auto;
+    object-fit: cover;
+}
+
+.text {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    text-align: left;
+    margin-left: 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.textTitle {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    text-align: left;
+    color: #333;
+    font-size: 15px;
+    max-width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 4px;
+}
+
+.textLink {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    text-align: left;
+    font-size: 14px;
+    margin: 0;
+    color: #777;
+}
+
+@media (min-width: 768px) {
+    .imagesContents {
+        padding: 1%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-evenly;
+    }
+}

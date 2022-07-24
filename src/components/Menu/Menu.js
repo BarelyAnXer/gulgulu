@@ -15,7 +15,8 @@ const Menu = () => {
                 <TextLogo fontSize="2rem"/>
                 <div className={styles.search}>
                     <AiOutlineSearch className={styles.searchIcon}/>
-                    <input className={styles.searchInput} type="text"/>
+                    <input className={styles.searchInput}
+                           type="text"/>
                     <FaTimes className={styles.timesIcon}/>
                 </div>
             </div>
@@ -23,32 +24,51 @@ const Menu = () => {
 
             <div className={styles.filterMenu}>
                 <div className={styles.containerMenuItemsContainer}>
-
-                    <NavLink
-                        exact
-                        to="/all"
-                        style={isActive => ({
-                            color: isActive ? "green" : "blue"
-                        })}>
-                        all
+                    <NavLink exact
+                             to='/all'
+                             className={({isActive}) => isActive ? `${styles.filterMenuItemContainer} ${styles.filterMenuItemContainerActive}` : styles.filterMenuItemContainer}>
+                        {({isActive}) => (
+                            <>
+                                <AiOutlineSearch
+                                    className={isActive ? `${styles.filterMenuItemIcon} ${styles.filterMenuItemIconActive}` : styles.filterMenuItemIcon}/>
+                                <p className={isActive ? `${styles.filterMenuItemLink} ${styles.filterMenuItemLinkActive}` : styles.filterMenuItemLink}>All</p>
+                            </>
+                        )}
                     </NavLink>
-
-                    <NavLink
-                        exact
-                        to="/projects"
-                        style={isActive => ({
-                            color: isActive ? "green" : "blue"
-                        })}
-                    >
-                        projects
+                    <NavLink exact
+                             to='/projects'
+                             className={({isActive}) => isActive ? `${styles.filterMenuItemContainer} ${styles.filterMenuItemContainerActive}` : styles.filterMenuItemContainer}>
+                        {({isActive}) => (
+                            <>
+                                <FaBriefcase
+                                    className={isActive ? `${styles.filterMenuItemIcon} ${styles.filterMenuItemIconActive}` : styles.filterMenuItemIcon}/>
+                                <p className={isActive ? `${styles.filterMenuItemLink} ${styles.filterMenuItemLinkActive}` : styles.filterMenuItemLink}>Projects</p>
+                            </>
+                        )}
                     </NavLink>
+                    <NavLink exact
+                             to='/images'
+                             className={({isActive}) => isActive ? `${styles.filterMenuItemContainer} ${styles.filterMenuItemContainerActive}` : styles.filterMenuItemContainer}>
+                        {({isActive}) => (
+                            <>
+                                <BsImages
+                                    className={isActive ? `${styles.filterMenuItemIcon} ${styles.filterMenuItemIconActive}` : styles.filterMenuItemIcon}/>
+                                <p className={isActive ? `${styles.filterMenuItemLink} ${styles.filterMenuItemLinkActive}` : styles.filterMenuItemLink}>Images</p>
+                            </>
+                        )}
+                    </NavLink>
+                    <NavLink exact
+                             to='/blog'
+                             className={({isActive}) => isActive ? `${styles.filterMenuItemContainer} ${styles.filterMenuItemContainerActive}` : styles.filterMenuItemContainer}>
+                        {({isActive}) => (
+                            <>
+                                <BiNews
 
-
-                    <div className={styles.filterMenuItemContainer}>
-                        <BsImages className={styles.filterMenuItemIcon}/>
-                        <p className={styles.filterMenuItemLink}>Images</p>
-                    </div>
-
+                                    className={isActive ? `${styles.filterMenuItemIcon} ${styles.filterMenuItemIconActive}` : styles.filterMenuItemIcon}/>
+                                <p className={isActive ? `${styles.filterMenuItemLink} ${styles.filterMenuItemLinkActive}` : styles.filterMenuItemLink}>Blog</p>
+                            </>
+                        )}
+                    </NavLink>
                 </div>
             </div>
         </>
