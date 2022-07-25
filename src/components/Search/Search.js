@@ -13,26 +13,30 @@ function Search() {
     const onFocusSearchInput = () => {
         setIsFocused(true)
     }
-    const onBluRSearchInput = () => {
-        setIsFocused(false)
-    }
+    const onBlurSearchInput = () => {
+        // links will not work if no delay since nawawala kagad yung links
+        // bago mag redirect
+        setTimeout(function () {
+            setIsFocused(false)
+        }, 100);
+    };
 
     const links = [
         {
             name: "All",
-            link: "",
+            route: "/all",
         },
         {
             name: "Projects",
-            link: "",
+            route: "/projects",
         },
         {
             name: "Images",
-            link: "",
+            route: "/images",
         },
         {
             name: "Blog",
-            link: "",
+            route: "/blog",
         }
     ];
 
@@ -49,7 +53,7 @@ function Search() {
                            className={styles.searchInput}
                            onChange={(event) => setSearchValue(event.target.value)}
                            onFocus={onFocusSearchInput}
-                           onBlur={onBluRSearchInput}
+                           onBlur={onBlurSearchInput}
                            value={searchValue}/>
                     <FaTimes style={{
                         visibility: (searchValue === '') ? 'hidden' : 'visible',
@@ -68,7 +72,8 @@ function Search() {
                     {
                         links.map((item) => {
                             return (<>
-                                <Link to={"/all"}
+                                <Link to={item.route}
+                                      onFocus={onFocusSearchInput}
                                       className={styles.searchOptionContainer}>
                                     <BiHistory/>
                                     <p className={styles.searchOptionName}>{item.name}</p>

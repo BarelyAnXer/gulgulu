@@ -5,10 +5,10 @@ import styles2 from "../Header/Header.module.css"
 import {AiOutlineSearch} from 'react-icons/ai'
 import {FaBriefcase, FaTimes} from 'react-icons/fa'
 import {BsImages} from "react-icons/bs";
-import {BiNews} from "react-icons/bi"
+import {BiHistory, BiNews} from "react-icons/bi"
 
 import TextLogo from '../TextLogo'
-import {NavLink} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import logo from "../../images/logo.jpg";
 import {HiUserAdd} from "react-icons/hi";
 import {useState} from "react";
@@ -16,9 +16,10 @@ import {CgMenuGridO} from "react-icons/cg";
 import {homeDropdownContent} from "../../data/homeDropdownContent";
 
 const Menu = () => {
-
+    const [searchValue, setSearchValue] = useState('')
     const [isBentoMenuClicked, setIsBentoMenuClicked] = useState(false)
     const [isProfileClicked, setIsProfileClicked] = useState(false)
+    const [isFocused, setIsFocused] = useState(false)
 
     const onBentoClick = () => {
         setIsBentoMenuClicked(prevState => !prevState)
@@ -29,6 +30,15 @@ const Menu = () => {
         setIsProfileClicked(prevState => !prevState)
         setIsBentoMenuClicked(false)
     }
+
+    const onFocusSearchInput = () => {
+        setIsFocused(true)
+    }
+    const onBlurSearchInput = () => {
+        setTimeout(function () {
+            setIsFocused(false)
+        }, 100);
+    };
 
     const navLinks = [
         {
@@ -53,16 +63,36 @@ const Menu = () => {
         },
     ]
 
+    const links = [
+        {
+            name: "All",
+            route: "/all",
+        },
+        {
+            name: "Projects",
+            route: "/projects",
+        },
+        {
+            name: "Images",
+            route: "/images",
+        },
+        {
+            name: "Blog",
+            route: "/blog",
+        }
+    ];
 
     return (
         <>
             <div className={styles.container}>
                 <TextLogo fontSize="2rem"/>
+
                 <div className={styles.search}>
                     <AiOutlineSearch className={styles.searchIcon}/>
                     <input className={styles.searchInput}
+                           onChange={(event) => setSearchValue(event.target.value)}
+                           value={searchValue}
                            type="text"/>
-                    <FaTimes className={styles.timesIcon}/>
                 </div>
 
 

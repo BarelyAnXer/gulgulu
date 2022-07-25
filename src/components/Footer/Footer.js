@@ -14,7 +14,7 @@ const Footer = () => {
                     <a href="#">About</a>
                     <a href="#">Projects</a>
                     <a href="#">Blog</a>
-                    <a href="#">Email</a>
+                    <a href="">Email</a>
                 </div>
                 <div className={styles.footerLinksSection}>
                     <a href="#">Github</a>
