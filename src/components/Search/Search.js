@@ -1,76 +1,99 @@
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 import styles from './Search.module.css'
-import { AiOutlineSearch } from 'react-icons/ai'
-import { FaTimes } from 'react-icons/fa'
-import { BiHistory } from 'react-icons/bi'
+import {AiOutlineSearch} from 'react-icons/ai'
+import {FaTimes} from 'react-icons/fa'
+import {BiHistory} from 'react-icons/bi'
+import {Link} from "react-router-dom";
 
-function Search () {
+function Search() {
 
-  const [isFocused, setIsFocused] = useState(false)
-  const [searchValue, setSearchValue] = useState('')
+    const [isFocused, setIsFocused] = useState(false)
+    const [searchValue, setSearchValue] = useState('')
 
-  const onFocusSearchInput = () => {
-    setIsFocused(true)
-  }
-  const onBluRSearchInput = () => {
-    setIsFocused(false)
-  }
+    const onFocusSearchInput = () => {
+        setIsFocused(true)
+    }
+    const onBluRSearchInput = () => {
+        setIsFocused(false)
+    }
 
-  return (
-    <>
-      <div
-        style={{
-          height: isFocused ? 'auto' : '50px',
-        }}  
-        className={styles.search}>
-        <div className={styles.searchInputContainer}>
-          <AiOutlineSearch className={styles.searchIcon}/>
-          <input type="text" className={styles.searchInput}
-                 onChange={(event) => setSearchValue(event.target.value)}
-                 onFocus={onFocusSearchInput} onBlur={onBluRSearchInput}
-                 value={searchValue}/>
-          <FaTimes style={{
-            visibility: (searchValue === '')
-              ? 'hidden'
-              : 'visible',
-          }} className={styles.removeIcon}
-                   onClick={() => setSearchValue('')}/>
-        </div>
+    const links = [
+        {
+            name: "All",
+            link: "",
+        },
+        {
+            name: "Projects",
+            link: "",
+        },
+        {
+            name: "Images",
+            link: "",
+        },
+        {
+            name: "Blog",
+            link: "",
+        }
+    ];
 
-        {/*<hr style={{*/}
-        {/*  display: isFocused ? 'block' : 'none',*/}
-        {/*}}/>*/}
-
-        <div style={{
-          display: isFocused ? 'block' : 'none',
-        }}>
-          {
-            [1, 2, 3].map(() => {
-              return (<>
-                <div className={styles.searchOptionContainer}>
-                  <BiHistory/>
-                  <p className={styles.searchOptionName}>About</p>
-                  <p className={styles.remove}>Remove</p>
+    return (
+        <>
+            <div
+                style={{
+                    height: isFocused ? 'auto' : '50px',
+                }}
+                className={styles.search}>
+                <div className={styles.searchInputContainer}>
+                    <AiOutlineSearch className={styles.searchIcon}/>
+                    <input type="text"
+                           className={styles.searchInput}
+                           onChange={(event) => setSearchValue(event.target.value)}
+                           onFocus={onFocusSearchInput}
+                           onBlur={onBluRSearchInput}
+                           value={searchValue}/>
+                    <FaTimes style={{
+                        visibility: (searchValue === '') ? 'hidden' : 'visible',
+                    }}
+                             className={styles.removeIcon}
+                             onClick={() => setSearchValue('')}/>
                 </div>
-              </>)
-            })
-          }
-          <div className={styles.searchButtonsContainer}>
-            <div className={styles.searchButton}>Search Website</div>
-            <div className={styles.searchButton}>I'm Feeling Lucky</div>
-          </div>
-        </div>
-      </div>
 
-      <div className={styles.searchButtonsContainer} style={{
-        display: isFocused ? 'none' : 'flex',
-      }}>
-        <div className={styles.searchButton}>Search Website</div>
-        <div className={styles.searchButton}>I'm Feeling Lucky</div>
-      </div>
+                {/*<hr style={{*/}
+                {/*  display: isFocused ? 'block' : 'none',*/}
+                {/*}}/>*/}
 
-    </>
-  )
+                <div style={{
+                    display: isFocused ? 'block' : 'none',
+                }}>
+                    {
+                        links.map((item) => {
+                            return (<>
+                                <Link to={"/all"}
+                                      className={styles.searchOptionContainer}>
+                                    <BiHistory/>
+                                    <p className={styles.searchOptionName}>{item.name}</p>
+                                    <p className={styles.remove}>Remove</p>
+                                </Link>
+                            </>)
+                        })
+                    }
+                    <div className={styles.searchButtonsContainer}>
+                        <div className={styles.searchButton}>Search Website</div>
+                        <div className={styles.searchButton}>I'm Feeling Lucky</div>
+                    </div>
+                </div>
+            </div>
+
+            <div className={styles.searchButtonsContainer}
+                 style={{
+                     display: isFocused ? 'none' : 'flex',
+                 }}>
+                <div className={styles.searchButton}>Search Website</div>
+                <div className={styles.searchButton}>I'm Feeling Lucky</div>
+            </div>
+
+        </>
+    )
 }
 
 export default Search

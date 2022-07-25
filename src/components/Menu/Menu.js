@@ -7,8 +7,34 @@ import {BiNews} from "react-icons/bi"
 
 import TextLogo from '../TextLogo'
 import {NavLink} from "react-router-dom";
+import {homeDropdownContent} from "../../data/homeDropdownContent";
 
 const Menu = () => {
+
+    const navLinks = [
+        {
+            name: "All",
+            route: "/all",
+            icon: AiOutlineSearch
+        },
+        {
+            name: "Projects",
+            route: "/projects",
+            icon: FaBriefcase
+        },
+        {
+            name: "Images",
+            route: "/images",
+            icon: BsImages
+        },
+        {
+            name: "Blog",
+            route: "/blog",
+            icon: BiNews
+        },
+    ]
+
+
     return (
         <>
             <div className={styles.container}>
@@ -24,51 +50,25 @@ const Menu = () => {
 
             <div className={styles.filterMenu}>
                 <div className={styles.containerMenuItemsContainer}>
-                    <NavLink exact
-                             to='/all'
-                             className={({isActive}) => isActive ? `${styles.filterMenuItemContainer} ${styles.filterMenuItemContainerActive}` : styles.filterMenuItemContainer}>
-                        {({isActive}) => (
-                            <>
-                                <AiOutlineSearch
-                                    className={isActive ? `${styles.filterMenuItemIcon} ${styles.filterMenuItemIconActive}` : styles.filterMenuItemIcon}/>
-                                <p className={isActive ? `${styles.filterMenuItemLink} ${styles.filterMenuItemLinkActive}` : styles.filterMenuItemLink}>All</p>
-                            </>
-                        )}
-                    </NavLink>
-                    <NavLink exact
-                             to='/projects'
-                             className={({isActive}) => isActive ? `${styles.filterMenuItemContainer} ${styles.filterMenuItemContainerActive}` : styles.filterMenuItemContainer}>
-                        {({isActive}) => (
-                            <>
-                                <FaBriefcase
-                                    className={isActive ? `${styles.filterMenuItemIcon} ${styles.filterMenuItemIconActive}` : styles.filterMenuItemIcon}/>
-                                <p className={isActive ? `${styles.filterMenuItemLink} ${styles.filterMenuItemLinkActive}` : styles.filterMenuItemLink}>Projects</p>
-                            </>
-                        )}
-                    </NavLink>
-                    <NavLink exact
-                             to='/images'
-                             className={({isActive}) => isActive ? `${styles.filterMenuItemContainer} ${styles.filterMenuItemContainerActive}` : styles.filterMenuItemContainer}>
-                        {({isActive}) => (
-                            <>
-                                <BsImages
-                                    className={isActive ? `${styles.filterMenuItemIcon} ${styles.filterMenuItemIconActive}` : styles.filterMenuItemIcon}/>
-                                <p className={isActive ? `${styles.filterMenuItemLink} ${styles.filterMenuItemLinkActive}` : styles.filterMenuItemLink}>Images</p>
-                            </>
-                        )}
-                    </NavLink>
-                    <NavLink exact
-                             to='/blog'
-                             className={({isActive}) => isActive ? `${styles.filterMenuItemContainer} ${styles.filterMenuItemContainerActive}` : styles.filterMenuItemContainer}>
-                        {({isActive}) => (
-                            <>
-                                <BiNews
-
-                                    className={isActive ? `${styles.filterMenuItemIcon} ${styles.filterMenuItemIconActive}` : styles.filterMenuItemIcon}/>
-                                <p className={isActive ? `${styles.filterMenuItemLink} ${styles.filterMenuItemLinkActive}` : styles.filterMenuItemLink}>Blog</p>
-                            </>
-                        )}
-                    </NavLink>
+                    {navLinks.map(((item, index) => {
+                        const Icon = navLinks[index].icon;
+                        return (
+                            <NavLink
+                                key={item.route}
+                                to={item.route}
+                                className={({isActive}) => isActive
+                                    ? `${styles.filterMenuItemContainer} ${styles.filterMenuItemContainerActive}`
+                                    : styles.filterMenuItemContainer}>
+                                {({isActive}) => (
+                                    <>
+                                        <Icon
+                                            className={isActive ? `${styles.filterMenuItemIcon} ${styles.filterMenuItemIconActive}` : styles.filterMenuItemIcon}/>
+                                        <p className={isActive ? `${styles.filterMenuItemLink} ${styles.filterMenuItemLinkActive}` : styles.filterMenuItemLink}>{item.name}</p>
+                                    </>
+                                )}
+                            </NavLink>
+                        )
+                    }))}
                 </div>
             </div>
         </>
