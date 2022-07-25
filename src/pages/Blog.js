@@ -20,10 +20,8 @@ const Blog = () => {
                         </div>
                         <p className={styles.blogTitle}>Some Fuckign Title Lorem ipsum dolor sit
                             amet.</p>
-                        <p className={styles.blogExcerpt}>Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Accusantium architecto cupiditate dicta et facere
-                            inventore nam nisi numquam quis voluptatem!</p>
-                        <p className={styles.blogDate}>15 hrs ago</p>
+                        <p className={styles.blogExcerpt}>{}</p>
+                        <p className={styles.blogDate}>{}</p>
                     </div>
                     <div className={styles.blogImageContainer}>
                         <img src={test2}

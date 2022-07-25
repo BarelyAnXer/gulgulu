@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="05033ea9-c435-4edc-b025-73ec86778484" name="Changes" comment="added bento and profile icon and dropdown on other pages">
+    <list default="true" id="05033ea9-c435-4edc-b025-73ec86778484" name="Changes" comment="updated projects.js">
+      <change afterPath="$PROJECT_DIR$/src/data/news.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menu/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu/Menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menu/Menu.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu/Menu.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Search/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search/Search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Search/Search.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search/Search.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/projects.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Projects.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Projects.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Blog.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +14,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -79,7 +74,11 @@
       <workItem from="1658625124685" duration="2611000" />
       <workItem from="1658632263103" duration="5852000" />
       <workItem from="1658664556182" duration="1748000" />
-      <workItem from="1658747405437" duration="2208000" />
+      <workItem from="1658747405437" duration="2326000" />
+      <workItem from="1658751954142" duration="9436000" />
+      <workItem from="1658764560479" duration="1820000" />
+      <workItem from="1658766666495" duration="6000" />
+      <workItem from="1658768395426" duration="2036000" />
     </task>
     <task id="LOCAL-00001" summary="a lot of changes">
       <created>1658405535740</created>
@@ -116,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658710444198</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="updated projects.js">
+      <created>1658750091619</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1658750091619</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,7 +171,8 @@
     <MESSAGE value="minor changes" />
     <MESSAGE value="refactored Menu.js" />
     <MESSAGE value="added bento and profile icon and dropdown on other pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="added bento and profile icon and dropdown on other pages" />
+    <MESSAGE value="updated projects.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated projects.js" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
