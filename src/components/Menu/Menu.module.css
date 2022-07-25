@@ -102,6 +102,11 @@
     color: #00f;
 }
 
+.bentoProfileContainer {
+    margin-left: auto;
+    display: none;
+}
+
 @media (min-width: 700px) {
     .filterMenuItemIcon {
         display: inline;
@@ -119,5 +124,8 @@
         margin-left: 170px;
     }
 
+    .bentoProfileContainer {
+        display: block;
+    }
 }
 

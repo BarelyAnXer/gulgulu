@@ -88,15 +88,10 @@ const Header = () => {
                 </div>
 
                 <div className={styles.sectionFourContainer}>
-          <span>
-            <a className={styles.sectionFourLink}>View code</a>
-          </span>
+                    <span><a className={styles.sectionFourLink}>View code</a></span>
                     <span>&nbsp;•&nbsp;</span>
-                    <span>
-            <a className={styles.sectionFourLink}>Blog & news</a>
-          </span>
+                    <span><a className={styles.sectionFourLink}>Blog & news</a></span>
                 </div>
-
             </div>
 
 
