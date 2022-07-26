@@ -57,30 +57,11 @@ const Menu = () => {
             icon: BsImages
         },
         {
-            name: "Blog",
+            name: "News",
             route: "/blog",
             icon: BiNews
         },
     ]
-
-    const links = [
-        {
-            name: "All",
-            route: "/all",
-        },
-        {
-            name: "Projects",
-            route: "/projects",
-        },
-        {
-            name: "Images",
-            route: "/images",
-        },
-        {
-            name: "Blog",
-            route: "/blog",
-        }
-    ];
 
     return (
         <>
@@ -120,7 +101,6 @@ const Menu = () => {
                             </div>
                         </div>
                     </div>
-
 
                     <div className={`${styles2.dropdown} ` +
                         (isBentoMenuClicked ? '' : styles2.dropdownOpen)}>

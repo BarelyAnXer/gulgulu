@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="05033ea9-c435-4edc-b025-73ec86778484" name="Changes" comment="updated projects.js">
-      <change afterPath="$PROJECT_DIR$/src/data/news.js" afterDir="false" />
+    <list default="true" id="05033ea9-c435-4edc-b025-73ec86778484" name="Changes" comment="updated data">
+      <change afterPath="$PROJECT_DIR$/src/images/news/banner/news1.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/news/banner/news2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/news/banner/news3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/news/banner/news4.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/news/icon/TechRadar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/news/icon/digitaltrends.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/news/icon/wired.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Menu/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu/Menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Search/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search/Search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/news.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/news.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/news/techCruch.webp" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/news/icon/techCruch.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Blog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Blog.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Blog.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +59,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\zye\WebstormProjects\gulugulu\src\images\news\icon" />
+      <recent name="C:\Users\zye\WebstormProjects\gulugulu\src\images\news\banner" />
       <recent name="C:\Users\zye\WebstormProjects\gulugulu\src\images\news" />
       <recent name="C:\Users\zye\WebstormProjects\gulugulu\src\images" />
       <recent name="C:\Users\zye\WebstormProjects\gulugulu\src\images\projects" />
@@ -78,7 +91,8 @@
       <workItem from="1658751954142" duration="9436000" />
       <workItem from="1658764560479" duration="1820000" />
       <workItem from="1658766666495" duration="6000" />
-      <workItem from="1658768395426" duration="2036000" />
+      <workItem from="1658768395426" duration="2059000" />
+      <workItem from="1658795305180" duration="3973000" />
     </task>
     <task id="LOCAL-00001" summary="a lot of changes">
       <created>1658405535740</created>
@@ -122,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658750091619</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="updated data">
+      <created>1658770461431</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1658770461431</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,7 +193,8 @@
     <MESSAGE value="refactored Menu.js" />
     <MESSAGE value="added bento and profile icon and dropdown on other pages" />
     <MESSAGE value="updated projects.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated projects.js" />
+    <MESSAGE value="updated data" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated data" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

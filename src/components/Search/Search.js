@@ -35,7 +35,7 @@ function Search() {
             route: "/images",
         },
         {
-            name: "Blog",
+            name: "News",
             route: "/blog",
         }
     ];
