@@ -11,10 +11,10 @@ const Footer = () => {
 
             <div className={`${styles.footerLinksContainer} ${styles.container}`}>
                 <div className={styles.footerLinksSection}>
-                    <a href="#">About</a>
+                    <a href="#">All</a>
                     <a href="#">Projects</a>
-                    <a href="#">Blog</a>
-                    <a href="">Email</a>
+                    <a href="#">Images</a>
+                    <a href="">News</a>
                 </div>
                 <div className={styles.footerLinksSection}>
                     <a href="#">Github</a>

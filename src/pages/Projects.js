@@ -1,6 +1,5 @@
 import Menu from "../components/Menu";
 import styles from "./Projects.module.css"
-import testImage from "../images/blog.png"
 import {projects} from "../data/projects";
 import Footer from "../components/Footer";
 
@@ -23,7 +22,7 @@ const Projects = () => {
 
                             <div className={styles.projectDetails}>
                                 <div className={styles.imgContainer}>
-                                    <img src={testImage}
+                                    <img src={item.img}
                                          className={styles.image}
                                          alt=""/>
                                 </div>

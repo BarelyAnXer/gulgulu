@@ -9,7 +9,7 @@ import {BiHistory, BiNews} from "react-icons/bi"
 
 import TextLogo from '../TextLogo'
 import {Link, NavLink} from "react-router-dom";
-import logo from "../../images/logo.jpg";
+import logo from "../../images/logos/logo.jpg";
 import {HiUserAdd} from "react-icons/hi";
 import {useState} from "react";
 import {CgMenuGridO} from "react-icons/cg";

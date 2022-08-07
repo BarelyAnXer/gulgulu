@@ -1,13 +1,13 @@
-import youtube from '../images/youtube.png'
-import github from '../images/github.png'
-import gmail from '../images/gmail.png'
-import linkedin from '../images/linkedin.png'
-import twitter from '../images/twitter.png'
-import resume from '../images/resume.png'
-import website from '../images/website.png'
-import blog from '../images/blog.png'
-import facebook from '../images/facebook.png'
-import temp from '../images/temp.png'
+import youtube from '../images/logos/youtube.png'
+import github from '../images/logos/github.png'
+import gmail from '../images/logos/gmail.png'
+import linkedin from '../images/logos/linkedin.png'
+import twitter from '../images/logos/twitter.png'
+import resume from '../images/logos/resume.png'
+import website from '../images/logos/website.png'
+import blog from '../images/logos/blog.png'
+import facebook from '../images/logos/facebook.png'
+import temp from '../images/logos/temp.png'
 
 export const homeDropdownContent = [
   {

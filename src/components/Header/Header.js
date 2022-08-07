@@ -1,5 +1,5 @@
 import styles from './Header.module.css'
-import logo from '../../images/logo.jpg'
+import logo from '../../images/logos/logo.jpg'
 import {CgMenuGridO} from 'react-icons/cg'
 import {HiUserAdd} from 'react-icons/hi'
 import {useState} from 'react'
