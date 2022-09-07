@@ -19,7 +19,7 @@ const Footer = () => {
         </div>
         <div className={styles.footerLinksSection}>
           <Link target="_blank"
-                to={"//github.com/"}>Github</Link>
+                to={"https://github.com/BarelyAnXer"}>Github</Link>
           <Link target="_blank"
                 to={"//www.linkedin.com/in/christian-gazzingan//"}>LinkedIn</Link>
           <a href="mailto:christiangazzingan38@gmail.com">Email Us</a>
