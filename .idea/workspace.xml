@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05033ea9-c435-4edc-b025-73ec86778484" name="Changes" comment="refactor">
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/accordionQnA.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/accordionQnA.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +112,7 @@
       <workItem from="1659876446832" duration="479000" />
       <workItem from="1660014923706" duration="593000" />
       <workItem from="1660916416101" duration="1563000" />
-      <workItem from="1662551594697" duration="221000" />
+      <workItem from="1662551594697" duration="583000" />
     </task>
     <task id="LOCAL-00001" summary="a lot of changes">
       <created>1658405535740</created>
