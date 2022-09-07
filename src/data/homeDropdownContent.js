@@ -47,7 +47,7 @@ export const homeDropdownContent = [
   },
   {
     name: 'My Website',
-    link: '',
+    link: 'https://modern-portfolio-dqqdk08vd-barelyanxer.vercel.app/',
     img: website,
   },
   {
